@@ -1,4 +1,5 @@
 Feature: US1008 kullanici farkli yanlis sifre ve kullanici adlariyla giris yapamaz
+ @negatif
   Scenario Outline: TC13 kullanici farkli yanlis sifre ve kullanici adlariyla giris yapamaz
     Given kullanici "hmcUrl" anasayfasinda
     Then Log in yazisina tiklar
