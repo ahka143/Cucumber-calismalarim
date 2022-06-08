@@ -3,5 +3,5 @@ Feature: US1003 kullanici parameter kullanarak arama yapabilmeli
   Scenario: TC06 kullanici parametre ile amazonda arama yapabilmeli
     Given kullanici amazon anasayfasinda
     And kullanici "java" icin arama yapar
-    And sonuclarin "java" icerdigini test eder
+    And sonuclarin "hava" icerdigini test eder
     Then sayfayi kapatir
