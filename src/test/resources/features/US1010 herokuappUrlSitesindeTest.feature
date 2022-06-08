@@ -1,6 +1,6 @@
 Feature: US1010 herokuappUrl sitesinde test yapar
 
-
+@herok
 Scenario: TC15 herokuapp'dan delete butonu calismali
 Given kullanici "herokuappUrl" anasayfasinda
 And add element butonuna basar

@@ -37,7 +37,9 @@ public class HerokuappStepdefinations {
 
     @Then("Delete butonunun gorunmedigini test eder")
     public void delete_butonunun_gorunmedigini_test_eder() {
-Assert.assertEquals(0,herokuappPage.DeleteButonlariList.size());
+        Assert.assertEquals(0, herokuappPage.DeleteButonlariList.size());
+      //  Assert.assertTrue(herokuappPage.DeleteButonlariList.isEmpty()); "Diger arkadaslar bu sekilde yapmislar "
+
     }
 
 }
