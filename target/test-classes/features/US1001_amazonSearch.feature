@@ -1,7 +1,7 @@
 @tumu
 Feature: US1001 Kullanici Amazon sayfasinda arama yapar
 
-  @nutella @ikisi
+  @nutella @ikisi @@sirali
   Scenario: TC01 kullanici amazonda Nutella aratir
 
     Given kullanici amazon anasayfasinda
@@ -18,7 +18,7 @@ Feature: US1001 Kullanici Amazon sayfasinda arama yapar
     And sayfayi kapatir
 
 
-  @iphone
+  @iphone @pr1
   Scenario: TC03 kullanici iphone aratir
 
     When kullanici amazon anasayfasinda

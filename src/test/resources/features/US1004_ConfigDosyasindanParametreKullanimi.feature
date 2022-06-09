@@ -1,5 +1,5 @@
 Feature: US1004 kullanici parametre ile Configuratin file'i kullanabilmeli
-  @config
+  @sirali  @pr2
   Scenario: TC07 configuration properties dosyasindan parametre kullanimi
 
     Given kullanici "techproUrl" anasayfasinda

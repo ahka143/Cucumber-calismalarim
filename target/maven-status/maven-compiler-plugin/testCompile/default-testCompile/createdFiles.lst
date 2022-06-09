@@ -11,4 +11,5 @@ runners\TestRunner.class
 utilities\Driver.class
 pages\HMCPage.class
 stepDefinitions\Hooks.class
+runners\TestRunner2.class
 utilities\ConfigReader.class
