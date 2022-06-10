@@ -12,4 +12,4 @@ Feature: US1012 kullanici resgister yapabilmeli
     And user kisisel bilgilerini ve iletisim bilgilerini girer
     And user Register butonuna basar
     Then hesap olustugunu dogrular
-   # And sayfayi kapatir
+   And sayfayi kapatir

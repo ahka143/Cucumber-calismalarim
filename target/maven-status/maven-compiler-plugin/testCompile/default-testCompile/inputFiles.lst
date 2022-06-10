@@ -1,5 +1,6 @@
 C:\Users\ahka1\IdeaProjects\com.CucumberCalismalarim\src\test\java\utilities\ConfigReader.java
 C:\Users\ahka1\IdeaProjects\com.CucumberCalismalarim\src\test\java\utilities\Driver.java
+C:\Users\ahka1\IdeaProjects\com.CucumberCalismalarim\src\test\java\stepDefinitions\AutumationStepDefinations.java
 C:\Users\ahka1\IdeaProjects\com.CucumberCalismalarim\src\test\java\stepDefinitions\HerokuappStepdefinations.java
 C:\Users\ahka1\IdeaProjects\com.CucumberCalismalarim\src\test\java\pages\GuruPage.java
 C:\Users\ahka1\IdeaProjects\com.CucumberCalismalarim\src\test\java\stepDefinitions\AmazonStepDefinations.java
@@ -10,6 +11,8 @@ C:\Users\ahka1\IdeaProjects\com.CucumberCalismalarim\src\test\java\runners\TestR
 C:\Users\ahka1\IdeaProjects\com.CucumberCalismalarim\src\test\java\pages\HMCPage.java
 C:\Users\ahka1\IdeaProjects\com.CucumberCalismalarim\src\test\java\pages\HerokuappPage.java
 C:\Users\ahka1\IdeaProjects\com.CucumberCalismalarim\src\test\java\pages\AmazonPage.java
+C:\Users\ahka1\IdeaProjects\com.CucumberCalismalarim\src\test\java\pages\AutomationPage.java
+C:\Users\ahka1\IdeaProjects\com.CucumberCalismalarim\src\test\java\stepDefinitions\ExcelStepDefinations.java
 C:\Users\ahka1\IdeaProjects\com.CucumberCalismalarim\src\test\java\stepDefinitions\Hooks.java
 C:\Users\ahka1\IdeaProjects\com.CucumberCalismalarim\src\test\java\pages\DataTablespage.java
 C:\Users\ahka1\IdeaProjects\com.CucumberCalismalarim\src\test\java\runners\TestRunner.java
