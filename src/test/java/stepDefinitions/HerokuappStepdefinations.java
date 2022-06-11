@@ -2,12 +2,16 @@ package stepDefinitions;
 
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
+import org.apache.commons.io.FileUtils;
 import org.junit.Assert;
+import org.openqa.selenium.OutputType;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import pages.HerokuappPage;
 import utilities.Driver;
 
+import java.io.File;
+import java.io.IOException;
 import java.time.Duration;
 
 public class HerokuappStepdefinations {
@@ -26,7 +30,10 @@ public class HerokuappStepdefinations {
     }
 
     @Then("Delete butonunun gorunur oldugunu test eder")
-    public void delete_butonunun_gorunur_oldugunu_test_eder() {
+    public void delete_butonunun_gorunur_oldugunu_test_eder() throws IOException {
+        File temp=herokuappPage.addButonu.getScreenshotAs(OutputType.FILE);
+        File addButonuScreenShot=new File("target/screenshots/ss.jpeg");
+        FileUtils.copyFile(temp,addButonuScreenShot);
         Assert.assertTrue(herokuappPage.birinciDeleteButonu.isDisplayed());
     }
 
