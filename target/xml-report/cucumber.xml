@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="9.546">
-    <testcase classname="US1013 kullanici excel bilgilerine ulasir" name="TC18 kullanici excel bilgilerini kullanir" time="9.138">
+<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="0.589">
+    <testcase classname="US1013 kullanici excel bilgilerine ulasir" name="TC18 kullanici excel bilgilerini kullanir" time="0.011">
         <system-out>
             <![CDATA[Given kullanici excel dosyasini kullanilabilir hale getirir.................passed
 Then 1.satirdaki 2.hucreyi yazdirir.........................................passed
