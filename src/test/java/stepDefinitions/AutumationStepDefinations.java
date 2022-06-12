@@ -7,11 +7,15 @@ import io.cucumber.java.en.Then;
 import org.junit.Assert;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.interactions.Actions;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 import pages.AutomationPage;
 import utilities.Driver;
 
-public class AutumationStepDefinations {
+import java.time.Duration;
 
+public class AutumationStepDefinations {
+WebDriverWait wait=new WebDriverWait(Driver.getDriver(), Duration.ofSeconds(15));
     AutomationPage automationPage = new AutomationPage();
     Faker faker = new Faker();
 
@@ -74,12 +78,14 @@ public class AutumationStepDefinations {
     @And("email kutusuna @isareti olmayan email adresi yazar ve enter'a tiklar")
     public void emailKutusunaIsaretiOlmayanEmailAdresiYazarVeEnterATiklar() {
         automationPage.emailTextBox.sendKeys("ddasdasd.com"+Keys.ENTER);
+      wait.until(ExpectedConditions.visibilityOf(automationPage.createAccountErrortext));
+
         System.out.println(automationPage.createAccountErrortext.getText());
     }
 
     @Then("error mesajinin Invalid email address oldugunu dogrulayin")
     public void errorMesajininInvalidEmailAddressOldugunuDogrulayin() {
-        String expectedText="1. Invalid email address.";
+        String expectedText="Invalid email address.";
         Assert.assertEquals(expectedText,automationPage.createAccountErrortext.getText());
     }
 }

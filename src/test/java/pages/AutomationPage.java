@@ -93,4 +93,6 @@ public class AutomationPage {
    @FindBy (id = "create_account_error")
    public WebElement createAccountErrortext;
 
+
+
 }
