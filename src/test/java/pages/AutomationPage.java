@@ -90,4 +90,7 @@ public class AutomationPage {
    @FindBy(xpath = "//*[text()='Invalid email address.']")
    public WebElement negativeResultText;
 
+   @FindBy (id = "create_account_error")
+   public WebElement createAccountErrortext;
+
 }

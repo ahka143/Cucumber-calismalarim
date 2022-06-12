@@ -74,5 +74,12 @@ public class AutumationStepDefinations {
     @And("email kutusuna @isareti olmayan email adresi yazar ve enter'a tiklar")
     public void emailKutusunaIsaretiOlmayanEmailAdresiYazarVeEnterATiklar() {
         automationPage.emailTextBox.sendKeys("ddasdasd.com"+Keys.ENTER);
+        System.out.println(automationPage.createAccountErrortext.getText());
+    }
+
+    @Then("error mesajinin Invalid email address oldugunu dogrulayin")
+    public void errorMesajininInvalidEmailAddressOldugunuDogrulayin() {
+        String expectedText="1. Invalid email address.";
+        Assert.assertEquals(expectedText,automationPage.createAccountErrortext.getText());
     }
 }
