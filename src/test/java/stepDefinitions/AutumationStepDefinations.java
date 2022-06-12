@@ -1,6 +1,7 @@
 package stepDefinitions;
 
 import com.github.javafaker.Faker;
+import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import org.junit.Assert;
@@ -70,4 +71,8 @@ public class AutumationStepDefinations {
         Assert.assertTrue(automationPage.positiveResultText.isDisplayed());
     }
 
+    @And("email kutusuna @isareti olmayan email adresi yazar ve enter'a tiklar")
+    public void emailKutusunaIsaretiOlmayanEmailAdresiYazarVeEnterATiklar() {
+        automationPage.emailTextBox.sendKeys("ddasdasd.com"+Keys.ENTER);
+    }
 }
