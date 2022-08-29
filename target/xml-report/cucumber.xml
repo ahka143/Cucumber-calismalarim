@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite errors="0" failures="2" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="3" time="33.621">
+    <testcase classname="US1001 Kullanici Amazon sayfasinda arama yapar" name="TC01 kullanici amazonda Nutella aratir" time="20.688">
+        <system-out>
+            <![CDATA[Given kullanici amazon anasayfasinda........................................passed
+Then kullanici Nutella icin arama yapar.....................................passed
+And sonuclarin Nutella icerdigini test eder.................................passed
+And sayfayi kapatir.........................................................passed
+]]>
+        </system-out>
+    </testcase>
+    <testcase classname="US1001 Kullanici Amazon sayfasinda arama yapar" name="TC02 kullanici amazonda Java aratir" time="12.556">
+        <failure message="no such window: target window already closed&#10;from unknown error: web view not found&#10;  (Session info: MicrosoftEdge=104.0.1293.70)&#10;Build info: version: '4.1.3', revision: '7b1ebf28ef'&#10;System info: host: 'MYLAPTOP', ip: '192.168.1.34', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.14'&#10;Driver info: org.openqa.selenium.edge.EdgeDriver&#10;Command: [350f79cbd579666fb709e74a18aa6d54, findElement {using=xpath, value=//div[@class='a-section a-spacing-small a-spacing-top-small']}]&#10;Capabilities {acceptInsecureCerts: false, browserName: msedge, browserVersion: 104.0.1293.70, javascriptEnabled: true, ms:edgeOptions: {debuggerAddress: localhost:51310}, msedge: {msedgedriverVersion: 104.0.1293.70 (6709c341bd06..., userDataDir: C:\Users\ahka1\AppData\Loca...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:51310/devtoo..., se:cdpVersion: 104.0.1293.70, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}&#10;Session ID: 350f79cbd579666fb709e74a18aa6d54" type="org.openqa.selenium.NoSuchWindowException">
+            <![CDATA[Given kullanici amazon anasayfasinda........................................passed
+Then kullanici Java icin arama yapar........................................passed
+And sonuclarin Java icerdigini test eder....................................failed
+And sayfayi kapatir.........................................................skipped
+
+StackTrace:
+org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: MicrosoftEdge=104.0.1293.70)
+Build info: version: '4.1.3', revision: '7b1ebf28ef'
+System info: host: 'MYLAPTOP', ip: '192.168.1.34', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.14'
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Command: [350f79cbd579666fb709e74a18aa6d54, findElement {using=xpath, value=//div[@class='a-section a-spacing-small a-spacing-top-small']}]
+Capabilities {acceptInsecureCerts: false, browserName: msedge, browserVersion: 104.0.1293.70, javascriptEnabled: true, ms:edgeOptions: {debuggerAddress: localhost:51310}, msedge: {msedgedriverVersion: 104.0.1293.70 (6709c341bd06..., userDataDir: C:\Users\ahka1\AppData\Loca...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:51310/devtoo..., se:cdpVersion: 104.0.1293.70, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 350f79cbd579666fb709e74a18aa6d54
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:567)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:385)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:377)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
+	at com.sun.proxy.$Proxy23.getText(Unknown Source)
+	at stepDefinitions.AmazonStepDefinations.sonuclarin_java_icerdigini_test_eder(AmazonStepDefinations.java:46)
+	at ✽.sonuclarin Java icerdigini test eder(file:///C:/Users/ahka1/IdeaProjects/com.CucumberCalismalarim/src/test/resources/features/US1001_amazonSearch.feature:17)
+]]>
+        </failure>
+    </testcase>
+    <testcase classname="US1001 Kullanici Amazon sayfasinda arama yapar" name="TC03 kullanici iphone aratir" time="0.018">
+        <failure message="no such window: target window already closed&#10;from unknown error: web view not found&#10;  (Session info: MicrosoftEdge=104.0.1293.70)&#10;Build info: version: '4.1.3', revision: '7b1ebf28ef'&#10;System info: host: 'MYLAPTOP', ip: '192.168.1.34', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.14'&#10;Driver info: org.openqa.selenium.edge.EdgeDriver&#10;Command: [350f79cbd579666fb709e74a18aa6d54, get {url=https://www.amazon.com}]&#10;Capabilities {acceptInsecureCerts: false, browserName: msedge, browserVersion: 104.0.1293.70, javascriptEnabled: true, ms:edgeOptions: {debuggerAddress: localhost:51310}, msedge: {msedgedriverVersion: 104.0.1293.70 (6709c341bd06..., userDataDir: C:\Users\ahka1\AppData\Loca...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:51310/devtoo..., se:cdpVersion: 104.0.1293.70, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}&#10;Session ID: 350f79cbd579666fb709e74a18aa6d54" type="org.openqa.selenium.NoSuchWindowException">
+            <![CDATA[When kullanici amazon anasayfasinda.........................................failed
+Then kullanici iphone icin arama yapar......................................skipped
+And sonuclarin iphone icerdigini test eder..................................skipped
+And sayfayi kapatir.........................................................skipped
+
+StackTrace:
+org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: MicrosoftEdge=104.0.1293.70)
+Build info: version: '4.1.3', revision: '7b1ebf28ef'
+System info: host: 'MYLAPTOP', ip: '192.168.1.34', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.14'
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Command: [350f79cbd579666fb709e74a18aa6d54, get {url=https://www.amazon.com}]
+Capabilities {acceptInsecureCerts: false, browserName: msedge, browserVersion: 104.0.1293.70, javascriptEnabled: true, ms:edgeOptions: {debuggerAddress: localhost:51310}, msedge: {msedgedriverVersion: 104.0.1293.70 (6709c341bd06..., userDataDir: C:\Users\ahka1\AppData\Loca...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:51310/devtoo..., se:cdpVersion: 104.0.1293.70, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 350f79cbd579666fb709e74a18aa6d54
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:567)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:330)
+	at stepDefinitions.AmazonStepDefinations.kullanici_amazon_anasayfasinda(AmazonStepDefinations.java:18)
+	at ✽.kullanici amazon anasayfasinda(file:///C:/Users/ahka1/IdeaProjects/com.CucumberCalismalarim/src/test/resources/features/US1001_amazonSearch.feature:24)
+]]>
+        </failure>
+    </testcase>
+</testsuite>
